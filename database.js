@@ -1,11 +1,11 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
 // Crear una instancia de conexión a BD
-const sequelize = new Sequelize('forodb', 'root', '', {
+//nombre database: post_db
+const sequelize = new Sequelize('post_db', 'root', '', {
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT,
   });
-
 
 
 
