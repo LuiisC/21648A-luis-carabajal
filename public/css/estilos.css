@@ -1,4 +1,13 @@
 body {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
+   background: url(/img/background_tech.png);
+}
+nav, footer{
+    background-color: rgb(9, 2, 104);
+}
+footer {
+    margin-top: 60px;
+}
+section {
+    background-color: rgba(255, 255, 255, 0.39);
+    align-items: center;
 }

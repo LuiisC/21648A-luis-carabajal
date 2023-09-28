@@ -24,6 +24,9 @@ router.get('/mostrar', (req, res) => {
 router.get('/search-por-id', (req, res) => {
     res.render('busqueda')
 })
+router.get('/crear-publicacion', (req, res) => {
+    res.render('crear')
+})
 // ====================================================
 //              Rutas para manejar Datos
 // ====================================================
