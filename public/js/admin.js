@@ -1,5 +1,3 @@
-
-
 const formNuevo = document.querySelector('#nueva-publicacion');
 
 formNuevo.addEventListener('submit', async (e) => {

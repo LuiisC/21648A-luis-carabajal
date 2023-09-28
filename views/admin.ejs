@@ -1,43 +1,49 @@
-<%-include('partials/header')  %>
-<%-include('partials/navbar')  %>
+<%-include('partials/header')%>
+<%-include('partials/navbar')%>
 
 
-<div class="container">
-    <div class="row mt-4">
-        <div class="col">
-            <h1 class="text-center">Nueva Publicación</h1>
+    <div class="container">
+        <div class="list-group p-2">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Crear Publicación</a>
+            <a href="/mostrar" class="list-group-item list-group-item-action">Mostrar todas las Publicaciones</a>
+            <a href="/search-por-id" class="list-group-item list-group-item-action">Buscar una Publicación</a>
+            <a href="#" class="list-group-item list-group-item-action">Actualizar una Publicación</a>
+            <a href="#" class="list-group-item list-group-item-action">Eliminar una publicación</a>
         </div>
-    </div>
-    <div class="row col-md-5 mx-auto">
 
-        <form action="" id="nueva-publicacion">
-
-            <div class="mb-3">
-                <input type="text" class="form-control" id="titulo" placeholder="Titulo">
+        <!--Formularios -->
+        <div class="row mt-4"> 
+            <div class="col">
+                <h1 class="text-center">Nueva Publicación</h1>
             </div>
-            <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="detalle"
-                    style="height: 100px"></textarea>
-                <label for="detalle">Detalle</label>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="url_imagen" placeholder="url imagen">
-            </div>
-            <div class="mb-3">
-                <input type="date" class="form-control" name="" id="fecha">
-            </div>
+        </div>
+        <div class="row col-md-5 mx-auto">
 
-            <button type="submit" class="btn btn-primary btn-sm">
-                Guardar
-            </button>
+            <form action="" id="nueva-publicacion">
 
-        </form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="titulo" placeholder="Titulo">
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="detalle"
+                        style="height: 100px"></textarea>
+                    <label for="detalle">Detalle</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="url_imagen" placeholder="url imagen">
+                </div>
+                <div class="mb-3">
+                    <input type="date" class="form-control" name="" id="fecha">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-sm">
+                    Guardar
+                </button>
+
+            </form>
+        </div>
 
 
-    </div>
-</div>
+    <script src="/js/admin.js"></script>
 
-
-<script src="/js/admin.js"></script>
-
-<%-include('partials/footer')  %>
+<%-include('partials/footer')%>

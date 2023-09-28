@@ -18,7 +18,12 @@ router.get('/admin', (req, res) => {
     res.render('admin')
 })
 
-
+router.get('/mostrar', (req, res) => {
+    res.render('mostrar')
+})
+router.get('/search-por-id', (req, res) => {
+    res.render('busqueda')
+})
 // ====================================================
 //              Rutas para manejar Datos
 // ====================================================
@@ -36,7 +41,6 @@ router.put('/publicacion/:id', actualizarPublicacion);
 
 // Ruta para eliminar publicación
 router.delete('/publicacion/:id', eliminarPublicacion);
-
 
 
 module.exports = router;

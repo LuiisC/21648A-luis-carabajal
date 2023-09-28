@@ -8,7 +8,6 @@ const sequelize = new Sequelize('post_db', 'root', '', {
   });
 
 
-
   module.exports = {
     sequelize,
     DataTypes,

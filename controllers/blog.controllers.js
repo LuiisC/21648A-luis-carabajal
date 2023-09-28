@@ -22,7 +22,6 @@ ctrl.crearPublicacion = async (req, res) => {
     }
 
 };
-
 // Controlador para obtener todas las publicaciones
 ctrl.obtenerPublicaciones = async (req, res) => {
     try {
@@ -35,7 +34,6 @@ ctrl.obtenerPublicaciones = async (req, res) => {
         })
     }
 };
-
 // Controlador para obtener una publicación
 ctrl.obtenerPublicacion = async (req, res) => {
     try {
@@ -50,7 +48,6 @@ ctrl.obtenerPublicacion = async (req, res) => {
     }
 
 };
-
 // Controlador para actualizar una publicación
 ctrl.actualizarPublicacion = async (req, res) => {
     const { id } = req.params;
@@ -69,11 +66,8 @@ ctrl.actualizarPublicacion = async (req, res) => {
         })
     }
 };
-
 // Controlador para eliminar una publicación
 ctrl.eliminarPublicacion = async (req, res) => {
-
 };
-
 
 module.exports = ctrl;

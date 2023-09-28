@@ -1,0 +1,29 @@
+<%-include('partials/header') %>
+<%-include('partials/navbar') %>
+
+<div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center p-2">Busqueda de publicación</h1>
+            </div>
+            
+            <form action="" id="form-buscar" class="p-4">
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="id_pub" placeholder="ID de la publicación" min="1">
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">
+                    Buscar
+                </button>
+            </form>
+
+        </div>
+        <div class="row col">
+            <main class="d-flex flex-column gap-2" id="resultado-busqueda">
+
+            </main>
+
+
+        </div>
+    </div>
+    <script src="/js/search.js"></script>
+<%-include('partials/footer') %>
